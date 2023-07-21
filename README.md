@@ -6,15 +6,18 @@ Inputs
   2. File Name :    Source file you want to encrypt/decrypt.
   3. Output Name :  A name for the processed file.
   4. Rerun :        To re-run the program.
+
   
 Outputs
   1. Encrypted/Decrypted File
+
 
 Requirments:
   1. A valid binary file to Encrypt (.txt, .jpg, .pdf, .png, .c, etc..)
   2. Every Input/Output file MUST be inside " Vault/ "
   3. Use "File_Name.extention" format when giving names. [Sometimes program still runs without .extension]
   4. Undifined inputs will lead to errors.
+
 
 Handled Error behavior:
   1. Wrong mode
