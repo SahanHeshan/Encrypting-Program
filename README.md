@@ -25,3 +25,7 @@ Handled Error behavior:
   3. Output file name already exist.
        - user can overwrite it / give a new name
   4. wrong input for re-run.
+
+Other Notes:
+  - "Vault/" already has some sample files. You can use your own files.
+  - 
