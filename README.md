@@ -28,4 +28,5 @@ Handled Error behavior:
 
 Other Notes:
   - "Vault/" already has some sample files. You can use your own files.
-  - 
+  - Encrypted file's extension doesn't has to be same as the Original file.
+  - But decrypted file need same extension as the Orginal file to work properly.
