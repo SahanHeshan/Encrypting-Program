@@ -1,9 +1,27 @@
 #include<stdio.h>
-
+#include<dirent.h>
 
 FILE *read_file=NULL;                           // Input file pointer
 FILE *write_file=NULL;                          // Output file pointer
 int ch;                                         // temporary character
+
+void directry(){                                // show file names inside the vault folder
+    DIR *d;
+    struct dirent *dir;
+    int i=1;
+
+    d = opendir("Vault/");
+    if (d){
+        printf("\n\tVault/\n");
+        while ((dir = readdir(d)) != NULL){
+            if (strcmp(dir->d_name, ".") == 0 || strcmp(dir->d_name, "..") == 0)    // to exclude 2 special system files
+                continue;
+            printf("\t%d. %s\n",i, dir->d_name);
+            i++;
+        }
+        closedir(d);
+    }
+}
 
 int encrypt(){
     ch = fgetc(read_file);                      // read file character by character in binary form
@@ -68,6 +86,7 @@ int main(){
             return 0;
         }
 
+        directry();
 
         printf("\nEnter File Name [with extension] : ");
         scanf(" %[^\n]s",&fname[6]);                    // a name for the input file
