@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<dirent.h>
+#include<string.h>
 
 FILE *read_file=NULL;                           // Input file pointer
 FILE *write_file=NULL;                          // Output file pointer
