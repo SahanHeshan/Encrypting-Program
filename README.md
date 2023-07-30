@@ -1,5 +1,5 @@
 # Encrypting-Program
-This Simple Program written entirely from c language can encrypt and decrypt a binary file.
+This Simple Program written entirely from c language can encrypt and decrypt a binary file (txt jpg png pdf etc.).
 
 Inputs
   1. Mode :         E for encrypting / D for decrypting.
